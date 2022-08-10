@@ -1,5 +1,5 @@
 {% set name = "actions-runner" %}
-{% set version = "2.294.0" %}
+{% set version = "2.295.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/actions/runner/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 900c7564ff388a18399293ad7ab0fb292ea3392079d630395860c199743394b1
+  sha256: 17a09ef5383addda80187008e9723f28a017852131526c611d6f37b19bfc86a9
 
 build:
-  skip: True  # [not linux64]
+  skip: true  # [not linux64]
   number: 0
 
 requirements:
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/actions/runner
-  summary: 'The Runner for GitHub Actions'
+  summary: The Runner for GitHub Actions
   description: |
     The runner is the application that runs a job from a GitHub Actions workflow.
   license: MIT
