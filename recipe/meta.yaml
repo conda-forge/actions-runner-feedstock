@@ -16,12 +16,12 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
-    - dotnet
+    - dotnet  >=6
   host:
     - lttng-ust              # [linux64]
     - zlib                   # [unix]
   run:
-    - dotnet
+    - dotnet-runtime  >=6
     - krb5                   # [unix]
     - lttng-ust              # [linux64]
     - nodejs =16
