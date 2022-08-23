@@ -1,5 +1,5 @@
 {% set name = "actions-runner" %}
-{% set version = "2.295.0" %}
+{% set version = "2.296.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/actions/runner/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 17a09ef5383addda80187008e9723f28a017852131526c611d6f37b19bfc86a9
+  sha256: 8ee7985d1ef3206e4159c401686b70a49f2e9a267fd82a8ec8301ded5a628005
 
 build:
   skip: true  # [not linux64]
