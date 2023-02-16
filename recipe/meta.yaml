@@ -1,5 +1,5 @@
 {% set name = "actions-runner" %}
-{% set version = "2.301.1" %}
+{% set version = "2.302.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/actions/runner/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 13f6605e7af322fd0450d1527475ed3ac528c76f14bda050a56ba314d04f60e6
+  sha256: 1f580026cb9929120f9d1ad19cc783ffd57b242fc67045043c946f8f85030fcc
 
 build:
   skip: true  # [not linux64]
@@ -16,7 +16,7 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
-    - dotnet  >=6.0.300,<6.0.400
+    - dotnet  >=6.0.405,<6.0.500
   host:
     - lttng-ust              # [linux64]
     - zlib                   # [unix]
