@@ -1,11 +1,11 @@
-About actions-runner
-====================
+About actions-runner-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/actions-runner-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/actions/runner
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/actions-runner-feedstock/blob/main/LICENSE.txt)
 
 Summary: The Runner for GitHub Actions
 
