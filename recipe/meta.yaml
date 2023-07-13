@@ -21,7 +21,7 @@ requirements:
     - lttng-ust              # [linux64]
     - zlib                   # [unix]
   run:
-    - dotnet-runtime  >=6
+    - dotnet-runtime  >=6.0.13
     - krb5                   # [unix]
     - lttng-ust              # [linux64]
     - nodejs =16
