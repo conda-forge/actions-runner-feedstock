@@ -16,6 +16,7 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - dotnet  >=6.0.420,<6.0.500
   host:
     - lttng-ust              # [linux64]
