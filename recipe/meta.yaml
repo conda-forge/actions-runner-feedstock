@@ -17,15 +17,15 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
-    - dotnet  >=6.0.412,<6.0.500
+    - dotnet-sdk ==8.0.404
   host:
     - lttng-ust              # [linux64]
     - zlib                   # [unix]
   run:
-    - dotnet-runtime  >=6.0.20
+    - dotnet-runtime >=8.0.11
     - krb5                   # [unix]
     - lttng-ust              # [linux64]
-    - nodejs =16
+    - nodejs >=20
 
 test:
   commands:
